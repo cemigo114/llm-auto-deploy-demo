@@ -1,14 +1,17 @@
-# LLM sizing demo
+# Auto-deploy (prototype)
 
-An answer-first UI for sizing and deploying an LLM on OpenShift AI: pick a model and your load,
-get the GPU count and deployment shape, with the efficiency trade-off behind it.
+Auto-deploy an LLM on OpenShift AI: pick a model and your load, get a recommended deployment with
+the GPU count and shape, and run it on your cluster. The efficiency trade-off sits behind the answer.
 
-**This is an early prototype for feedback.** It runs entirely on **recorded** AISimulate responses
-(no live service, no GPUs). Numbers are best-effort simulator estimates, not guarantees, and the
-latency target is shown as pass/warn, not enforced.
+**Early prototype for feedback.** It runs entirely on **recorded** AISimulate responses (no live
+service, no GPUs). Numbers are best-effort simulator estimates, not guarantees, and the latency
+target is shown as pass/warn, not enforced.
+
+Not to be confused with ConfigIQ (planning: compare GPUs, model cost). This is the deploy path:
+recommend, then run it in your cluster.
 
 ## Try it
-- Live: enabled via GitHub Pages (see the repository's Pages URL).
+- Live: https://cemigo114.github.io/llm-sizing-demo/
 - Local:
   ```
   npm install

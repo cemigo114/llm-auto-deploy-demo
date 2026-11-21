@@ -52,10 +52,9 @@ export function App() {
   return (
     <Page>
       <PageSection>
-        <Title headingLevel="h1" size="2xl">Size and deploy a model</Title>
+        <Title headingLevel="h1" size="2xl">Auto-deploy a model</Title>
         <Content component="p" style={{ color: '#3c3f42', marginTop: 4 }}>
-          Pick a model and your load. The recommendation and the efficiency trade-off come from an
-          AISimulate sweep.
+          Pick a model and your load. Get a recommended deployment and run it on your cluster.
         </Content>
       </PageSection>
       <PageSection>
