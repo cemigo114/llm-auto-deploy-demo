@@ -1,0 +1,86 @@
+{
+  "models": [
+    {
+      "key": "qwen3-0.6b",
+      "label": "Qwen3-0.6B",
+      "system": "h200_sxm",
+      "sweepModelId": "Qwen/Qwen3-0.6B",
+      "answers": {
+        "users": [
+          {
+            "value": 32,
+            "file": "capac-conc32.json"
+          },
+          {
+            "value": 128,
+            "file": "capac-conc128.json"
+          },
+          {
+            "value": 512,
+            "file": "capac-conc512.json"
+          }
+        ],
+        "rps": [
+          {
+            "value": 5,
+            "file": "thrpt-rps5.json"
+          },
+          {
+            "value": 50,
+            "file": "thrpt-rps50.json"
+          },
+          {
+            "value": 200,
+            "file": "thrpt-rps200.json"
+          }
+        ]
+      },
+      "frontier": "pareto-qwen06b.json",
+      "cr": null
+    },
+    {
+      "key": "qwen2.5-72b",
+      "label": "Qwen2.5-72B-Instruct",
+      "system": "h200_sxm",
+      "sweepModelId": "Qwen/Qwen2.5-72B-Instruct",
+      "answers": {
+        "users": [
+          {
+            "value": 64,
+            "file": "capac-qwen72b.json"
+          }
+        ],
+        "rps": [
+          {
+            "value": 20,
+            "file": "thrpt-qwen72b.json"
+          }
+        ]
+      },
+      "frontier": "pareto-qwen72b.json",
+      "cr": null
+    },
+    {
+      "key": "qwen3-235b-a22b",
+      "label": "Qwen3-235B-A22B",
+      "system": "h200_sxm",
+      "sweepModelId": "Qwen/Qwen3-235B-A22B",
+      "answers": {
+        "users": [
+          {
+            "value": 64,
+            "file": "capac-qwen235b.json"
+          }
+        ],
+        "rps": [
+          {
+            "value": 20,
+            "file": "thrpt-qwen235b.json"
+          }
+        ]
+      },
+      "frontier": "pareto-qwen235b.json",
+      "cr": "cr-qwen3-235b-a22b.yaml"
+    }
+  ]
+}
