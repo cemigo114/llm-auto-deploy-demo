@@ -11,7 +11,7 @@ Not to be confused with ConfigIQ (planning: compare GPUs, model cost). This is t
 recommend, then run it in your cluster.
 
 ## Try it
-- Live: https://cemigo114.github.io/llm-sizing-demo/
+- Live: https://cemigo114.github.io/llm-auto-deploy-demo/
 - Local:
   ```
   npm install
